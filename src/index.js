@@ -103,10 +103,11 @@ const resolvers = {
   },
 
   Mutation: {
-    createPost: (root, { url, description,title }) => {
+    createPost: (root, { url, description, title }) => {
       const post = {
         id: uniqid(),
         url,
+        title,
         description
       };
 
