@@ -99,7 +99,7 @@ const findPostIdxById = id => {
 const resolvers = {
   Query: {
     info: () => 'A simple GraphQL server example with in-memory data.',
-    posts: () => posts
+    posts: () => posts.reverse()
   },
 
   Mutation: {
